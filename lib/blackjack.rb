@@ -68,6 +68,9 @@ def runner
   # code runner here
   welcome
   num=initial_round
-  puts num
+  until num > 21
+  num=hit?(num)
+  display_card_total(num)
+  end
+  end_game(num)
 end
-    
