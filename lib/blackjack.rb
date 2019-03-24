@@ -46,6 +46,7 @@ def hit?(number)
     return number
     elsif input === "h"
     number+=deal_card
+    return number
   else
     invalid_command
     prompt_user
