@@ -40,23 +40,24 @@ end
 def hit?(number)
   # code hit? here
   prompt_user
-  x=get_user_input
-  if x==="s"
+  input=gets.chomp
+  if input==="s"
     display_card_total(number)
-    return x
-    return
-    elsif x === "h"
-    display_card_total(x)
-    return number+=deal_card
+    return number
+    elsif input === "h"
+    number+=deal_card
   else
     invalid_command
+    prompt_user
   end
+  
+  
+  
 end
 
 def invalid_command
   # code invalid_command here
   puts "Please enter a valid command"
-  prompt_user
 end
 
 #####################################################
