@@ -46,13 +46,12 @@ def hit?(number)
     return number
     elsif input === "h"
     number+=deal_card
+    display_card_total(number)
     return number
   else
     invalid_command
     prompt_user
   end
-  
-  
   
 end
 
