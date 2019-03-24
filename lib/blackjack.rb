@@ -42,11 +42,11 @@ def hit?(number)
   prompt_user
   input=gets.chomp
   if input==="s"
-    display_card_total(number)
+
     return number
     elsif input === "h"
     number+=deal_card
-    display_card_total(number)
+
     return number
   else
     invalid_command
